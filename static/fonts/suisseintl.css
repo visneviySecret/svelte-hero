@@ -1,0 +1,5 @@
+@font-face {
+	font-family: 'Suisse Intl';
+	src: url('/fonts/suisseintl.ttf'), /* IE < 9 */
+		url('/fonts/suisseintl.woff2') format('woff2'); /* Super Modern Browsers */
+	}
