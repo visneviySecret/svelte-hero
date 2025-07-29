@@ -5,26 +5,13 @@
 	box-sizing: border-box;
 }
 
-* {
+body,
+main {
 	margin: 0;
 	padding: 0;
 }
 
-html {
-	height: 100%;
-}
-
-body {
-	height: 100%;
-	line-height: 1.5;
-	-webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
-}
-
 img,
-picture,
-video,
-canvas,
 svg {
 	display: block;
 	max-width: 100%;
