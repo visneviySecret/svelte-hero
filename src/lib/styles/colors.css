@@ -9,13 +9,4 @@
 	--text-primary: #eceae9;
 	--text-on-accent: #fafafa;
 	--text-secondary-default: #afadac;
-
-	--btn-gradient-primary: linear-gradient(
-		135deg,
-		var(--brand-gradient-600) 0%,
-		var(--brand-gradient-500) 15%,
-		var(--brand-gradient-300) 100%
-	);
-	--btn-outline-color: var(--brand-gradient-300);
-	--btn-shadow-color: rgba(255, 85, 0, 0.3);
 }

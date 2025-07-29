@@ -7,6 +7,8 @@
 </button>
 
 <style>
+	@import './Button.css';
+
 	.btn {
 		display: inline-flex;
 		align-items: center;
