@@ -21,6 +21,7 @@ main {
 		Cantarell,
 		sans-serif;
 	line-height: 1.5;
+	font-weight: 500;
 	-webkit-font-smoothing: antialiased;
 	-moz-osx-font-smoothing: grayscale;
 }
@@ -52,6 +53,7 @@ h4,
 h5,
 h6 {
 	overflow-wrap: break-word;
+	margin: 0;
 }
 
 #root,
