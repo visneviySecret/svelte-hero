@@ -22,12 +22,9 @@ function createLocationStore() {
 	const initialCountryCode = getCountryCodeFromCookies();
 	const initialData: LocationData = initialCountryCode ? { countryCode: initialCountryCode } : {};
 
-	const { subscribe, set, update } = writable<LocationData>(initialData);
+	const { set, update } = writable<LocationData>(initialData);
 
 	return {
-		subscribe,
-		set,
-		update,
 		setCountryCode: (countryCode: string) => {
 			update((data) => ({ ...data, countryCode }));
 		},
