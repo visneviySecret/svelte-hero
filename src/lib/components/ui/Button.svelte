@@ -7,7 +7,6 @@
 </button>
 
 <style>
-	@import '../../styles/colors.css';
 	.btn {
 		display: inline-flex;
 		align-items: center;
