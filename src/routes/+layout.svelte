@@ -14,7 +14,8 @@
 	main {
 		background-color: var(--default);
 		width: 100vw;
-		height: 100dvh;
+		min-height: 100dvh;
+		padding-bottom: clamp(0rem, -7.775rem + 32.736vw, 21.688rem);
 	}
 
 	.container {
