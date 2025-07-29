@@ -1,4 +1,5 @@
 <script>
+	import '../lib/styles/global.css';
 	import '../lib/styles/colors.css';
 	import '../lib/styles/breackpoints.css';
 </script>
