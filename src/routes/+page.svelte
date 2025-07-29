@@ -2,13 +2,12 @@
 	import Hero from '$lib/components/landing/sections/Hero.svelte';
 	import { onMount } from 'svelte';
 	import { locationStore } from '$lib/stores/location';
-	import type { PageData } from './$types';
+	import { fetchLocation } from '$lib/api/location';
 
-	export let data: PageData;
-
-	onMount(() => {
-		if (data.ipData?.country_code) {
-			locationStore.setCountryCode(data.ipData.country_code);
+	onMount(async () => {
+		const locationData = await fetchLocation();
+		if (locationData?.country_code) {
+			locationStore.setCountryCode(locationData.country_code);
 		}
 	});
 </script>
