@@ -7,21 +7,29 @@
 </script>
 
 <section>
-	<h1>Instant access to investing, anytime and anywhere</h1>
-	<p>
-		Start trading top assets, from stocks to metals, in minutes, right from your phone or laptop.
-		Enjoy a complete trading ecosystem with built-in analytics and educational tools.
-	</p>
+	<div class="title-wrapper">
+		<h1>Instant access to investing, anytime and anywhere</h1>
+		<p>
+			Start trading top assets, from stocks to metals, in minutes, right from your phone or laptop.
+			Enjoy a complete trading ecosystem with built-in analytics and educational tools.
+		</p>
+	</div>
 
 	<div class="button-wrapper">
 		<Button onclick={handleGetStarted}>Get started for free</Button>
+	</div>
+
+	<div class="image-wrapper">
+		<enhanced:img src="$lib/assets/Main Image.png" alt="Trading platform interface" />
 	</div>
 </section>
 
 <style>
 	section {
 		text-align: center;
-		margin-bottom: 3rem;
+	}
+
+	.title-wrapper {
 		max-width: 951px;
 		margin-inline: auto;
 	}
@@ -48,5 +56,13 @@
 
 	.button-wrapper {
 		margin-top: clamp(2.5rem, 0.6rem + 8vw, 3rem);
+	}
+
+	.image-wrapper {
+		margin-top: clamp(2.5rem, 2rem + 4vw, 3rem);
+	}
+
+	.image-wrapper :global(img) {
+		height: auto;
 	}
 </style>
