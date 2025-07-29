@@ -1,0 +1,15 @@
+:root {
+	--brand-gradient-600: #ffa33a;
+	--brand-gradient-500: #ff8516;
+	--brand-gradient-300: #ff5500;
+
+	--btn-gradient-primary: linear-gradient(
+		135deg,
+		var(--brand-gradient-600) 0%,
+		var(--brand-gradient-500) 15%,
+		var(--brand-gradient-300) 100%
+	);
+	--btn-outline-color: var(--brand-gradient-300);
+
+	--white: #ffffff;
+}
