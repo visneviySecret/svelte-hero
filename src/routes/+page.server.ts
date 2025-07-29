@@ -1,4 +1,5 @@
 export const load = async ({ fetch, cookies }) => {
+	const existingCountryCode = cookies.get('country_code');
 	try {
 		const response = await fetch('https://ipapi.co/json/');
 		const ipData = await response.json();
@@ -9,12 +10,24 @@ export const load = async ({ fetch, cookies }) => {
 				maxAge: 60 * 60 * 24 * 2,
 				sameSite: 'lax'
 			});
+			return {
+				ipData
+			};
+		} else if (existingCountryCode) {
+			return {
+				ipData: {
+					country_code: existingCountryCode
+				}
+			};
 		}
-
-		return {
-			ipData
-		};
 	} catch (error) {
+		if (existingCountryCode) {
+			return {
+				ipData: {
+					country_code: existingCountryCode
+				}
+			};
+		}
 		return {
 			ipData: null,
 			error: error instanceof Error ? error.message : String(error)

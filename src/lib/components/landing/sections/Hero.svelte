@@ -1,5 +1,9 @@
 <script lang="ts">
 	import { Button } from '$lib/components/ui';
+	import { locationStore } from '$lib/stores/location';
+
+	$: isUSUser = $locationStore.countryCode === 'US';
+	$: isButtonVisible = !isUSUser;
 
 	function handleGetStarted() {
 		alert('Добро пожаловать в SvelteKit! 🚀');
@@ -15,7 +19,7 @@
 		</p>
 	</div>
 
-	<div class="button-wrapper">
+	<div class="button-wrapper" style="visibility: {isButtonVisible ? 'visible' : 'hidden'};">
 		<Button onclick={handleGetStarted}>Get started for free</Button>
 	</div>
 
