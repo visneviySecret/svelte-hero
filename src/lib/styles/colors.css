@@ -1,7 +1,14 @@
 :root {
+	--default: #1b1817;
+	--white: #ffffff;
+
 	--brand-gradient-600: #ffa33a;
 	--brand-gradient-500: #ff8516;
 	--brand-gradient-300: #ff5500;
+
+	--text-primary: #eceae9;
+	--text-on-accent: #fafafa;
+	--text-secondary-default: #afadac;
 
 	--btn-gradient-primary: linear-gradient(
 		135deg,
@@ -10,6 +17,5 @@
 		var(--brand-gradient-300) 100%
 	);
 	--btn-outline-color: var(--brand-gradient-300);
-
-	--white: #ffffff;
+	--btn-shadow-color: rgba(255, 85, 0, 0.3);
 }
