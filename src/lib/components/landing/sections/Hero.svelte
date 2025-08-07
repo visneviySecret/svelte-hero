@@ -6,7 +6,7 @@
 	$: isButtonVisible = !isUSUser;
 
 	function handleGetStarted() {
-		alert('Добро пожаловать в SvelteKit! 🚀');
+		alert('Welcome to trading platform!');
 	}
 </script>
 
