@@ -1,7 +1,6 @@
 <script>
 	import '../lib/styles/global.css';
 	import '../lib/styles/colors.css';
-	import '../lib/styles/breackpoints.css';
 </script>
 
 <main>
@@ -10,7 +9,9 @@
 	</div>
 </main>
 
-<style>
+<style lang="scss">
+	@use '../lib/styles/media.scss' as *;
+
 	main {
 		background-color: var(--default);
 		width: 100vw;
@@ -19,26 +20,26 @@
 	}
 
 	.container {
-		max-width: var(--breakpoints-maxWidth);
+		max-width: $maxWidth;
 		margin-inline: auto;
 		padding-top: 96px;
 		padding-inline: 24px;
 	}
 
-	@media (min-width: 720px) {
+	@include tabM {
 		.container {
 			padding-top: 104px;
 			padding-inline: 32px;
 		}
 	}
 
-	@media (min-width: 1366px) {
+	@include deskL {
 		.container {
 			padding-inline: 40px;
 		}
 	}
 
-	@media (min-width: 1440px) {
+	@include deskXL {
 		.container {
 			padding-top: 116px;
 			padding-inline: 56px;

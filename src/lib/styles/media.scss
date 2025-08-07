@@ -1,0 +1,44 @@
+$mobS: 393px;
+$mobL: 480px;
+$tabM: 720px;
+$deskS: 1024px;
+$deskL: 1366px;
+$deskXL: 1440px;
+
+$maxWidth: 1328px;
+
+@mixin mobS {
+	@media (min-width: #{$mobS}) {
+		@content;
+	}
+}
+
+@mixin mobL {
+	@media (min-width: #{$mobL}) {
+		@content;
+	}
+}
+
+@mixin tabM {
+	@media (min-width: #{$tabM}) {
+		@content;
+	}
+}
+
+@mixin deskS {
+	@media (min-width: #{$deskS}) {
+		@content;
+	}
+}
+
+@mixin deskL {
+	@media (min-width: #{$deskL}) {
+		@content;
+	}
+}
+
+@mixin deskXL {
+	@media (min-width: #{$deskXL}) {
+		@content;
+	}
+}
