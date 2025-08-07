@@ -2,12 +2,12 @@
 	export let onclick: ((event: MouseEvent) => void) | undefined = undefined;
 </script>
 
-<button class="btn" on:click={onclick}>
+<button class="btn" {onclick}>
 	<slot />
 </button>
 
 <style>
-	@import './Button.css';
+	@import './Style/Button.css';
 
 	.btn {
 		display: inline-flex;
